@@ -5,7 +5,7 @@ let aWidth
 let aHeight
 
 function setup(){
-    createCanvas(600, 600, document.getElementById("sk2"))
+    createCanvas(600, 600)
 
     colorMode(HSB, TWO_PI, 1, 1, 1)
     radius = width*0.1

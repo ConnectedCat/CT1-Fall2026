@@ -1,7 +1,7 @@
 let angle = 0
 
 function setup() {
-    createCanvas(800, 600, document.getElementById("sk1"));
+    createCanvas(800, 600);
 }
 
 function draw() {
@@ -24,11 +24,11 @@ function draw() {
 
 function makeGrid(gridRes = 10){
     let xVal = width/gridRes
-    for(let x = 0; x < gridRes; x++){
+    for(let x = 0; x <= gridRes; x++){
         line(xVal * x, 0, xVal * x, height)
     }
     let yVal = height/gridRes
-    for(let y = 0; y < gridRes; y++){
+    for(let y = 0; y <= gridRes; y++){
         line(0, yVal * y, width, yVal *y)
     }
 }
